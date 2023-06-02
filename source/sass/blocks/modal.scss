@@ -1,0 +1,112 @@
+.modal {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 10;
+}
+
+.modal__box {
+  position: relative;
+  top: 20%;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 30px 46px;
+  flex-direction: column;
+  border: 1px solid #c6c6c6;
+  background-color: $white;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 38px 108px 46px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 14px;
+  color: $black-strong;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__subtitle {
+  margin-bottom: 21px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    content: "";
+    background-color: $black-strong;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    content: "";
+    background-color: $black-strong;
+    transform: rotate(-45deg);
+  }
+}
+
+.cart__field {
+  display: flex;
+  column-gap: 7px;
+  margin: 0 0 31px;
+  padding: 0;
+  border: none;
+}
+
+.cart__radio-label {
+  flex-grow: 1;
+  cursor: pointer;
+
+  &:hover .cart__radio {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.cart__radio {
+  display: block;
+  padding: 16px 0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart__radio-input:checked + .cart__radio {
+  border-color: #62d1ba;
+}
+
+.cart__button {
+  background-color: $emerald;
+  color: $white;
+  border: none;
+  width: 100%;
+}

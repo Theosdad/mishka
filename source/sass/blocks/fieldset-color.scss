@@ -1,0 +1,175 @@
+.fieldset-color {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 165px 262px 262px;
+    row-gap: 24px;
+    background-color: $gray-light;
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 173px 262px 264px;
+    padding: 47px 0;
+    padding-bottom: 52px;
+  }
+}
+
+.fieldset-color::after,
+.fieldset-color::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 100%;
+    width: 100vw;
+    background-color: $gray-light;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.fieldset-color::after {
+  @media (min-width: $tablet-width) {
+    right: -20px;
+    top: 0;
+  }
+}
+
+.fieldset-color::before {
+  left: -50px;
+}
+
+.fieldset-color-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: -7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  span {
+    @media (min-width: $desktop-width) {
+      padding-top: 6px;
+    }
+  }
+
+  svg {
+    @media (max-width: $mobile-width-only) {
+      padding: 7px;
+    }
+  }
+
+  &:hover {
+    .checkbox-icon rect {
+      stroke: #62d1ba;
+    }
+  }
+
+  &:active {
+    .checkbox-icon rect {
+      stroke: rgba($color: #444444, $alpha: 0.3);
+    }
+  }
+}
+
+.fieldset-color-label:nth-child(even) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
+}
+
+.fieldset-color-label:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
+}
+
+.fieldset-color-label:nth-child(3n+1) {
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+  }
+}
+
+.fieldset-color-label:nth-child(3n+2) {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.fieldset-color-label:nth-child(3n+3) {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
+}
+
+.fieldset-color-label:not(:last-child) {
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.legend-color {
+  margin-bottom: 18px;
+  margin-left: -3px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    position: absolute;
+    padding-top: 68px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 57px;
+    }
+  }
+}
+
+.legend-color::after {
+  content: "";
+  height: 1px;
+  width: 415%;
+  position: absolute;
+  top: 50%;
+  left: 132%;
+  background-color: #63d1bb;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.checkbox-icon {
+  path {
+    display: none;
+  }
+}
+
+.form-input--checkbox:checked + .checkbox-icon {
+  path {
+    display: block;
+  }
+}

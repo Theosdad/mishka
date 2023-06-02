@@ -1,0 +1,81 @@
+.button {
+  color: $black-light;
+  background-color: $white;
+  border: 2px solid $black-light;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.button--primary {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: inherit;
+    font-size: 17px;
+
+    &:hover {
+      background-color: $black-light;
+      color: $white;
+    }
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}
+
+.button--form {
+  font-size: 17px;
+  line-height: 16px;
+  padding: 16px 0;
+}
+
+.button--make-order {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: inherit;
+    font-size: 17px;
+  }
+
+  &:hover {
+    background-color: $black-light;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}
+
+.button--slider {
+  border: 1px solid $gray;
+  padding: 12px 38px;
+
+  @media (min-width: $tablet-width) {
+    width: inherit;
+    border: none;
+    padding: 10px;
+  }
+
+  svg {
+    fill: $black-strong;
+  }
+
+  &:hover {
+    svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}

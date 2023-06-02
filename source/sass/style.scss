@@ -1,0 +1,42 @@
+// global
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/normalize.scss";
+@import "./global/heading.scss";
+@import "./global/buttons.scss";
+@import "./global/edgings.scss";
+
+// index.html
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/promo-menu.scss";
+@import "./blocks/features.scss";
+@import "./blocks/feature-list.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/contacts-map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/developed.scss";
+
+// catalog.html
+@import "./blocks/products-header.scss";
+@import "./blocks/products-list.scss";
+@import "./blocks/products-item.scss";
+@import "./blocks/production.scss";
+@import "./blocks/playback-button.scss";
+
+// knit-order-form.html
+@import "./blocks/order-form.scss";
+@import "./blocks/fieldset-type.scss";
+@import "./blocks/fieldset-color.scss";
+@import "./blocks/fieldset-fullname.scss";
+@import "./blocks/fieldset-phone.scss";
+@import "./blocks/fieldset-email.scss";
+@import "./blocks/fieldset-additional.scss";
+@import "./blocks/modal.scss";

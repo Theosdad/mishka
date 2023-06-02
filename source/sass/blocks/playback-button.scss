@@ -1,0 +1,22 @@
+.playback-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 28%;
+  top: 24%;
+
+  @media (min-width: $tablet-width) {
+    left: 42%;
+    top: 42%;
+  }
+
+  &:hover {
+    transform: scale(120%);
+  }
+
+  &:active {
+    transform: scale(80%);
+    opacity: 30%;
+  }
+}

@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+  list-style-type: none;
+}
+
+.social__link {
+  svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.production {
+  border: 1px solid $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 683px 367px;
+    column-gap: 38px;
+    margin-bottom: 105px;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: block;
+    }
+  }
+}
+
+.production__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  width: 100%;
+  margin-bottom: 26.5px;
+  margin-top: 23px;
+  padding-left: 33px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    justify-content: left;
+    padding-left: 40px;
+    margin-top: 5px;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 40px;
+    gap: 30px;
+  }
+}
+
+.production__video-wrapper {
+  position: relative;
+  margin-bottom: 35px;
+
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    margin: 0;
+  }
+}
+
+.production__descpition {
+  color: $black-light;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 42px;
+  padding-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-left: 40px;
+    padding-right: 45px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    margin-top: 16px;
+  }
+}
+
+.production__button-positioner {
+  margin-bottom: 33px;
+  width: 192px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0 41px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    width: 230px;
+    padding-bottom: 53px;
+  }
+}

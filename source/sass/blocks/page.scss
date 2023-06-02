@@ -1,0 +1,46 @@
+.page {
+  min-width: 320px;
+  max-width: 767px;
+  height: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+  }
+}
+
+.page__body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.page__content {
+  min-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+
+.inner-header {
+  width: 100%;
+  background-color: $gray-light;
+  text-align: center;
+  padding: 73px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 103px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 82px;
+  }
+}

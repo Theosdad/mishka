@@ -1,0 +1,43 @@
+.promo-menu {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 480px;
+  }
+}
+
+.promo-menu__item {
+  padding: 16px 27px;
+  padding-right: 13px;
+}
+
+.promo-menu__item:nth-child(2n) {
+  padding: 16px 0;
+}
+
+.promo-menu__link {
+  color: $black-strong;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 24px;
+
+  &:hover {
+    span {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
+}

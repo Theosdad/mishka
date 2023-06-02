@@ -1,0 +1,21 @@
+.edging {
+  @media (max-width: $mobile-width-only) {
+    background: url("../img/edging(m).svg");
+    min-width: 145vw;
+    max-width: 180vw;
+    height: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/edging(t).svg");
+    height: 17px;
+    min-width: 145vw;
+    max-width: 180vw;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/edging(d).svg");
+    height: 23px;
+    min-width: 100%;
+  }
+}
